@@ -171,6 +171,7 @@ button {
 button,
 [type="button"] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -659,9 +660,6 @@ small,
   color: var(--teal);
 }
 
-.navbar-dark .navbar-nav .nav-link {
-
-}
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
   color: var(--secondary);
@@ -673,7 +671,7 @@ small,
 }
 
 .navbar-dark .navbar-toggler {
-  color: var: (--white);
+  color: var(--white);
   border-color: var(--white);
 }
 
@@ -795,7 +793,6 @@ a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: var(--dark) !important;
-  !important;
 }
 
 .bg-white {
@@ -1000,8 +997,6 @@ a.text-warning:focus {
   }
 }
 
-
-
 h1,
 h3,
 h5,
@@ -1014,8 +1009,8 @@ h5,
   font-weight: 400;
 }
 
-h2{
-  color: var(--secondary)
+h2 {
+  color: var(--secondary);
 }
 
 h1.typewriter {
@@ -1024,7 +1019,8 @@ h1.typewriter {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid white;
-  animation: typing 6s steps(30) infinite alternate, blink 0.75s step-end infinite;
+  animation: typing 6s steps(30) infinite alternate,
+    blink 0.75s step-end infinite;
 }
 
 .compressed-text {
@@ -1147,7 +1143,7 @@ h1.typewriter {
   .hero-wrap {
     background-position: center;
   }
-} 
+}
 
 .dark-overlay {
   position: absolute;
@@ -1495,7 +1491,7 @@ h4 {
 }
 
 .ftco-footer a:hover {
-  color: var(--light)
+  color: var(--light);
 }
 
 .ftco-footer .text-center {
