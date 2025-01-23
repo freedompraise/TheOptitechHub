@@ -206,12 +206,12 @@ h5,
 
 h1,
 .h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2,
 .h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3,
@@ -1770,41 +1770,30 @@ h4 {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round;
 }
-.certification-item {
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.certification-link {
-  display: block;
-  padding: 20px;
-  background: #fff;
-  border: 2px solid var(--gray-light);
-  border-radius: 10px;
+.certification-wrap {
   text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--gray-dark);
-  text-decoration: none;
-  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.certification-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.certification-link:hover {
-  background-color: var(--primary);
-  color: var(--white) !important;
-  border-color: var(--semi-transparent-gold);
+.certification-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.certification-link::after {
-  content: "Certified";
-  display: block;
-  font-size: 12px;
-  color: var(--secondary);
-  margin-top: 5px;
-  text-transform: none;
+.carousel-certifications .item {
+  margin: 0 10px;
+}
+
+.carousel-certifications .owl-nav {
+  display: none; /* Hide navigation arrows */
 }
 
 .pricing-entry {

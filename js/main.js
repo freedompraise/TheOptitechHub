@@ -61,6 +61,25 @@
     });
   };
 
+  $(".carousel-certifications").owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
+
   // Tools Carousel
   var carouselTools = function () {
     $(".carousel-tools").owlCarousel({
@@ -327,60 +346,5 @@
       animateOut: "slideOutDown", // Custom animation on slide out
       animateIn: "flipInX", // Custom animation on slide in
     });
-  });
-
-  $(document).ready(function () {
-    var $typewriterText = $(".typewriter");
-    var originalText = $typewriterText.html();
-    var firstLetter = originalText.charAt(0); // First letter to retain
-    var fullText = originalText.slice(1); // Rest of the text
-    var typingSpeed = 100; // Typing speed in ms
-    var deletingSpeed = 150; // Deleting speed in ms
-    var delayBetweenCycles = 2000; // Delay before restarting the cycle
-    var currentText = firstLetter; // Initialize with first letter
-
-    function typeText(text, index) {
-      if (index < text.length) {
-        currentText += text.charAt(index);
-        $typewriterText.html(currentText);
-        setTimeout(function () {
-          typeText(text, index + 1);
-        }, typingSpeed);
-      } else {
-        setTimeout(deleteText, delayBetweenCycles); // Delay before deletion starts
-      }
-    }
-
-    $(document).ready(function () {
-      var $typewriterText = $(".typewriter");
-      var originalText = $typewriterText.html();
-      var resetTyping = function () {
-        $typewriterText.html("H");
-        setTimeout(function () {
-          $typewriterText.html(originalText);
-        }, 1000);
-      };
-      setInterval(resetTyping, 6000);
-    });
-  });
-
-  $(document).ready(function () {
-    var items = [
-      "Virtual Assistant",
-      "Real Estate Virtual Assistant",
-      "Vacation Rental VA",
-      "Virtual Coach",
-      "Let's Collaborate!",
-    ];
-    var $textElement = $(".swapping-text");
-    var currentIndex = 0;
-    function switchText() {
-      $textElement.fadeOut(function () {
-        $textElement.html(items[currentIndex]);
-        $textElement.fadeIn();
-        currentIndex = (currentIndex + 1) % items.length;
-      });
-    }
-    setInterval(switchText, 4000);
   });
 })(jQuery);
