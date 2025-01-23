@@ -225,6 +225,7 @@ h5,
 
 .lead {
   font-size: 1.25rem;
+  color: var(--white) !important;
   font-weight: 300;
 }
 
