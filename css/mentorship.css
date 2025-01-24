@@ -1,5 +1,3 @@
-/* Mentorship Page */
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -29,7 +27,7 @@ body {
 
 .hero-section {
   background: url("../images/full-2.jpg") no-repeat center center / cover;
-  padding: 5rem 2rem; /* Added padding for breathing space */
+  padding: 5rem 2rem;
   color: #fff;
 }
 
@@ -51,7 +49,7 @@ body {
 .screenshots img,
 .challenge-testimonials img {
   max-width: 100%;
-  height: auto; /* Maintains aspect ratio */
+  height: auto;
   margin: 0.5rem;
   border-radius: 8px;
   object-fit: cover;
@@ -70,18 +68,19 @@ body {
 }
 
 .screenshots img {
-  max-width: 90%; /* Adds space around images */
+  max-width: 90%;
 }
 
 .challenge-testimonials img {
   max-width: 80%;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 .highlights ul,
 .benefits ul {
   list-style: none;
   padding-left: 0;
+  text-align: center;
 }
 
 .highlights ul li,
@@ -105,10 +104,15 @@ body {
   border-color: #fff;
 }
 
-/* Responsive Design */
+.highlights h2,
+.benefits h2,
+.highlights p {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .hero-section h1 {
-    font-size: 4rem; /* Larger font size for desktops */
+    font-size: 4rem;
   }
 
   .hero-section p {
@@ -123,17 +127,21 @@ body {
   }
 
   .images-carousel img {
-    max-height: 500px; /* Prevents overly large images */
+    max-height: 500px;
   }
 
   .scrolling-testimonials img {
-    height: 200px; /* Standardize height */
+    height: 200px;
+  }
+
+  .challenge-testimonials img {
+    height: auto;
   }
 }
 
 @media (max-width: 767px) {
   .hero-section {
-    padding: 3rem 1rem; /* Reduce padding for mobile */
+    padding: 3rem 1rem;
   }
 
   .hero-section h1 {
@@ -145,6 +153,10 @@ body {
   }
 
   .scrolling-testimonials img {
-    height: 150px; /* Adjust image size for mobile */
+    height: 150px;
+  }
+
+  .challenge-testimonials img {
+    height: auto;
   }
 }
