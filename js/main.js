@@ -28,6 +28,18 @@
   };
   loader();
 
+  $(document).ready(function () {
+    $("#learnMoreBtn").on("click", function (event) {
+      event.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: $("#about").offset().top,
+        },
+        1000
+      );
+    });
+  });
+
   var baseCarouselSettings = {
     center: true,
     loop: true,
