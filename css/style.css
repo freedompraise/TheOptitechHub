@@ -387,7 +387,7 @@ small,
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: var(--white);
+  color: var(--gray-dark);
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -1340,7 +1340,7 @@ h1.typewriter {
 .btn.btn-primary {
   background: var(--primary) !important;
   border: 1px solid #21bf73 !important;
-  color: var(--white) !important;
+  color: var(--gray-dark) !important;
 }
 .btn.btn-primary:hover {
   border: 1px solid #21bf73;
