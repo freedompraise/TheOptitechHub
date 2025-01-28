@@ -33,7 +33,7 @@ html {
 }
 
 .hero-section {
-  background-color: var(--semi-transparent-gold);
+  background-color: var(--gray-dark);
   color: var(--light);
   text-align: center;
   padding: 80px 20px;
