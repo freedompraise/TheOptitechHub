@@ -1569,7 +1569,7 @@ h1.typewriter {
 
 .ftco-footer p {
   font-size: 16px;
-  color: var(--light);
+  color: var(--primary);
 }
 
 .ftco-footer .ftco-footer-social {
@@ -1582,7 +1582,7 @@ h1.typewriter {
 }
 
 .ftco-footer a {
-  color: var(--secondary);
+  color: var(--primary);
   font-size: 24px;
   transition: all 0.3s ease;
 }
