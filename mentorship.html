@@ -66,22 +66,22 @@
     <!-- Scrolling Testimonials -->
     <section class="scrolling-testimonials py-5">
         <h2 class="text-center">What People Are Saying</h2>
-        <div class="d-flex testimonial-images">
-            <img src="images/mentorship/1.jpeg" alt="Testimonial 1">
-            <img src="images/mentorship/2.jpeg" alt="Testimonial 2">
-            <img src="images/mentorship/3.jpeg" alt="Testimonial 3">
-            <img src="images/mentorship/4.jpeg" alt="Testimonial 1">
-            <img src="images/mentorship/5.jpeg" alt="Testimonial 2">
-            <img src="images/mentorship/6.jpeg" alt="Testimonial 3">
-            <img src="images/mentorship/7.jpeg" alt="Testimonial 4">
-            <img src="images/mentorship/8.jpeg" alt="Testimonial 1">
-            <img src="images/mentorship/9.jpeg" alt="Testimonial 2">
-            <img src="images/mentorship/10.jpeg" alt="Testimonial 3">
-            <img src="images/mentorship/11.jpeg" alt="Testimonial 4">
-            <img src="images/mentorship/12.jpeg" alt="Testimonial 1">
-            <img src="images/mentorship/13.jpeg" alt="Testimonial 2">
-            <img src="images/mentorship/14.jpeg" alt="Testimonial 3">
-            <img src="images/mentorship/16.jpeg" alt="Testimonial 4">
+        <div class="d-flex justify-content-center flex-wrap testimonial-images">
+            <img class="imageModal" src="images/mentorship/1.jpeg" alt="Testimonial 1">
+            <img class="imageModal" src="images/mentorship/2.jpeg" alt="Testimonial 2">
+            <img class="imageModal" src="images/mentorship/3.jpeg" alt="Testimonial 3">
+            <img class="imageModal" src="images/mentorship/4.jpeg" alt="Testimonial 4">
+            <img class="imageModal" src="images/mentorship/5.jpeg" alt="Testimonial 5">
+            <img class="imageModal" src="images/mentorship/6.jpeg" alt="Testimonial 6">
+            <img class="imageModal" src="images/mentorship/7.jpeg" alt="Testimonial 7">
+            <img class="imageModal" src="images/mentorship/8.jpeg" alt="Testimonial 8">
+            <img class="imageModal" src="images/mentorship/9.jpeg" alt="Testimonial 9">
+            <img class="imageModal" src="images/mentorship/10.jpeg" alt="Testimonial 10">
+            <img class="imageModal" src="images/mentorship/11.jpeg" alt="Testimonial 11">
+            <img class="imageModal" src="images/mentorship/12.jpeg" alt="Testimonial 12">
+            <img class="imageModal" src="images/mentorship/13.jpeg" alt="Testimonial 13">
+            <img class="imageModal" src="images/mentorship/14.jpeg" alt="Testimonial 14">
+            <img class="imageModal" src="images/mentorship/16.jpeg" alt="Testimonial 15">
         </div>
     </section>
 
@@ -89,9 +89,9 @@
     <section class="screenshots py-5 text-center">
         <h2>Job Offers from Upwork</h2>
         <div class="d-flex justify-content-center flex-wrap">
-            <img src="images/offers/1.jpeg" alt="Upwork Job Offer 1">
-            <img src="images/offers/2.jpeg" alt="Upwork Job Offer 2">
-            <img src="images/offers/3.jpeg" alt="Upwork Job Offer 3">
+            <img class="imageModal" src="images/offers/1.jpeg" alt="Upwork Job Offer 1">
+            <img class="imageModal" src="images/offers/2.jpeg" alt="Upwork Job Offer 2">
+            <img class="imageModal" src="images/offers/3.jpeg" alt="Upwork Job Offer 3">
         </div>
     </section>
 
@@ -99,9 +99,9 @@
     <section class="challenge-testimonials py-5 text-center">
         <h2>Success Stories from the 30-Day Challenge</h2>
         <div class="d-flex flex-wrap justify-content-center gap-3">
-            <img src="images/challenge/1.jpeg" alt="Testimonial 1">
-            <img src="images/challenge/2.jpeg" alt="Testimonial 2">
-            <img src="images/challenge/3.jpeg" alt="Testimonial 3">
+            <img class="imageModal" src="images/challenge/1.jpeg" alt="Testimonial 1">
+            <img class="imageModal" src="images/challenge/2.jpeg" alt="Testimonial 2">
+            <img class="imageModal" src="images/challenge/3.jpeg" alt="Testimonial 3">
         </div>
     </section>
 
@@ -131,6 +131,32 @@
             </ul>
         </div>
     </section>
+
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img id="modalImage" class="img-fluid" alt="Expanded Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modal = new bootstrap.Modal(document.getElementById("imageModal"));
+            const modalImage = document.getElementById("modalImage");
+
+            document.querySelectorAll(".testimonial-images img, .screenshots img, .challenge-testimonials img").forEach(img => {
+                img.addEventListener("click", function () {
+                    modalImage.src = this.src;
+                    modal.show();
+                });
+            });
+        });
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
