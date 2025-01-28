@@ -115,7 +115,8 @@ html {
 
 .scrolling-testimonials img,
 .screenshots img,
-.challenge-testimonials img {
+.challenge-testimonials img,
+.client-praises img {
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -134,7 +135,8 @@ html {
 
 .testimonial-images img:hover,
 .screenshots img:hover,
-.challenge-testimonials img:hover {
+.challenge-testimonials img:hover,
+.client-praises img:hover {
   transform: scale(1.1);
 }
 

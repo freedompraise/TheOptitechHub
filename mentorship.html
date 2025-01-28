@@ -81,7 +81,10 @@
             <img class="imageModal" src="images/mentorship/12.jpeg" alt="Testimonial 12">
             <img class="imageModal" src="images/mentorship/13.jpeg" alt="Testimonial 13">
             <img class="imageModal" src="images/mentorship/14.jpeg" alt="Testimonial 14">
-            <img class="imageModal" src="images/mentorship/16.jpeg" alt="Testimonial 15">
+            <img class="imageModal" src="images/mentorship/19.jpeg" alt="Testimonial 15">
+            <img class="imageModal" src="images/mentorship/16.jpeg" alt="Testimonial 16">
+            <img class="imageModal" src="images/mentorship/17.jpeg" alt="Testimonial 17">
+            <img class="imageModal" src="images/mentorship/18.jpeg" alt="Testimonial 18">
         </div>
     </section>
 
@@ -91,7 +94,7 @@
         <div class="d-flex justify-content-center flex-wrap">
             <img class="imageModal" src="images/offers/1.jpeg" alt="Upwork Job Offer 1">
             <img class="imageModal" src="images/offers/2.jpeg" alt="Upwork Job Offer 2">
-            <img class="imageModal" src="images/offers/3.jpeg" alt="Upwork Job Offer 3">
+            <!-- <img class="imageModal" src="images/offers/3.jpeg" alt="Upwork Job Offer 3"> -->
         </div>
     </section>
 
@@ -104,6 +107,21 @@
             <img class="imageModal" src="images/challenge/3.jpeg" alt="Testimonial 3">
         </div>
     </section>
+
+    <!-- Praises from Clients -->
+    <section class="client-praises py-5 text-center">
+        <h2>What Clients Are Saying</h2>
+        <div class="d-flex justify-content-center flex-wrap">
+            <img class="imageModal" src="images/clients/1.jpeg" alt="Client Praise 1">
+            <img class="imageModal" src="images/clients/2.jpeg" alt="Client Praise 2">
+            <img class="imageModal" src="images/clients/3.jpeg" alt="Client Praise 3">
+            <img class="imageModal" src="images/clients/4.jpeg" alt="Client Praise 4">
+            <img class="imageModal" src="images/clients/5.jpeg" alt="Client Praise 5">
+            <img class="imageModal" src="images/clients/6.jpeg" alt="Client Praise 6">
+            <img class="imageModal" src="images/clients/7.jpeg" alt="Client Praise 7">
+        </div>
+    </section>
+
 
     <!-- Highlights -->
     <section class="highlights py-5">
@@ -149,7 +167,7 @@
             const modal = new bootstrap.Modal(document.getElementById("imageModal"));
             const modalImage = document.getElementById("modalImage");
 
-            document.querySelectorAll(".testimonial-images img, .screenshots img, .challenge-testimonials img").forEach(img => {
+            document.querySelectorAll(".testimonial-images img, .screenshots img, .challenge-testimonials img, .client-praises img").forEach(img => {
                 img.addEventListener("click", function () {
                     modalImage.src = this.src;
                     modal.show();
