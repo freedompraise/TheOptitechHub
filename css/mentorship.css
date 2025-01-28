@@ -50,22 +50,84 @@ html {
 }
 
 .hero-section {
-  background: url("../images/bg.jpg") no-repeat center center / cover;
-  padding: 5rem 2rem;
-  color: #fff;
+  background-color: var(--semi-transparent-gold);
+  color: var(--light);
+  text-align: center;
+  padding: 80px 20px;
 }
 
-.hero-section h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+.display-4 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.hero-section p {
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+.lead {
+  font-size: 1.4rem;
+  font-weight: 500;
+  max-width: 700px;
+  margin: 0 auto 25px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-lg {
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--secondary) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--light) !important;
+  color: var(--primary) !important;
+}
+
+.btn-outline-light {
+  border: 2px solid var(--light);
+  color: var(--light);
+  background: transparent;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--light);
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.2rem;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-lg {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .images-carousel img,
@@ -115,17 +177,12 @@ html {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: var(--light);
 }
 
 .btn-outline-light {
-  color: #fff;
-  border-color: #fff;
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .highlights h2,
