@@ -1183,6 +1183,11 @@ h1.typewriter {
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  margin: 10px 0;
+  width: 90%;
+  display: block;
+  font-size: 0.9rem;
+  padding: 8px 15px;
 }
 
 .cta-buttons .btn-primary {
@@ -1238,14 +1243,9 @@ h1.typewriter {
     font-size: 0.9rem;
   }
 
-  .cta-buttons a {
-    margin: 10px 0;
-    width: 90%;
-    display: block;
-  }
-
   .image-container {
     max-width: 100%;
+    display: none;
   }
 }
 
@@ -1260,11 +1260,6 @@ h1.typewriter {
 
   .hero-description {
     font-size: 0.8rem;
-  }
-
-  .cta-buttons a {
-    font-size: 0.9rem;
-    padding: 8px 15px;
   }
 }
 
